@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
+<!-- <style>
     .image-container {
         display: flex;
         flex-wrap: wrap;
@@ -16,9 +17,8 @@
         height: 300px;
         cursor: pointer;
     }
-</style>
+</style> -->
 <body>
-    <script src="app.js"></script>
     <!-- Qno:01
     <a href="#" onclick="clickeable()">Click Me</a> -->
      <!-- Qno:02-->
@@ -77,7 +77,12 @@
    onmouseenter="https://media3.giphy.com/media/VFJ7qJVY66klG/200w.gif?cid=82a1493bj0v9sxlhmzy22ji4a1cavfwxi3agw1yvq8mgme23&ep=v1_gifs_related&rid=200w.gif&ct=g"
    src="img/dora.png" alt=""> -->
    <!-- Qno:05-->
-   <button onclick="increase()">Increase</button>
-   <button onclick="decrease()">Decrease</button>
+   <div class="container">
+    <h1>Counter <span id="count">0</span></h1>
+    <button id="increment">Increase</button>
+    <button id="decrement">Decrease</button>
+    <button id="restart">Restart</button>
+</div>
+<script src="app.js"></script>
 </body>
 </html>

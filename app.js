@@ -1,34 +1,32 @@
-// Qno:01
-function clickeable()
-{
-    alert("Hello Dear")
-}
-// Qno:02
-function showAlert(mobileName)
- {
-    alert('You clicked on ' + mobileName);
-}
+// // Qno:01
+// function clickeable()
+// {
+//     alert("Hello Dear")
+// }
+// // Qno:02
+// function showAlert(mobileName)
+//  {
+//     alert('You clicked on ' + mobileName);
+// }
 // Qno:03
-function deleteRow(button)
-{
-    button.closest('tr').remove();
-}
+// function deleteRow(button)
+// {
+//     button.closest('tr').remove();
+// }
 // Qno:04
-let count = 0;
+var counter = 0;
 
-function updateCounter() {
-    console.log("Counter:", count);
+document.getElementById('increment').onclick = function() {
+    counter += 1;
+    document.getElementById('count').innerHTML = counter;
 }
 
-function increase() {
-    count++;
-    updateCounter();
+document.getElementById('decrement').onclick = function() {
+    counter -= 1;
+    document.getElementById('count').innerHTML = counter;
 }
 
-function decrease() {
-    count--;
-    updateCounter();
+document.getElementById('restart').onclick = function() {
+    counter = 0;
+    document.getElementById('count').innerHTML = counter;
 }
-
-// Initial display
-updateCounter();
